@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chik-chik - Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/main-link.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img class="header__logo"src="img/logo.svg" alt="logo">
+            <div class=" header__container">
+                <img class="header__logo"src="img/logo.svg" alt="logo" width="70px" height="40px">
 
-            <nav class="header__navigation navigation">
+                <nav class="header__navigation navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a href="#price" class="navigation__link">Стоимость услуг</a>
@@ -21,9 +29,9 @@
                         <a href="#about" class="navigation__link">О нас</a>
                     </li>
                 </ul>
-
-            </nav>
-            <a href="#booking" class="header__link main-link">Записаться</a>
+                </nav>
+                <a href="#booking" class="header__link main-link">Записаться</a>
+            </div>
         </div>
     </header>
     <main>
@@ -40,7 +48,7 @@
                         <li class="slider__item">
                             <img class="slider__img" src="img/photo02.jpg" alt="grooomed-man">
                         </li>
-                        <li class="slider__item">
+                        <li class="slider__item slider__item-active">
                             <img class="slider__img" src="img/photo01.png" alt="grooomed-man">
                         </li>
                         <li class="slider__item">
@@ -280,7 +288,7 @@
                         </fieldset>
                         
                 </div>
-                <button class="booking__btn main-link">Записаться</button>
+                <button class="booking__btn main-link" disabled>Записаться</button>
             </form>
         </div>
     </section>
